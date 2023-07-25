@@ -2,6 +2,7 @@ body {
     font-family: roboto, sans-serif;
     background-color: #FFFFFF;
     color: var(--brand-color1);
+    letter-spacing: 0.02em;
 }
 
 :root {
@@ -19,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .header {
     border-color: var(--brand-color6);
     border-bottom: 1px;
@@ -26,10 +31,10 @@ a {
 
 
 .web-studio1 {
-    font: raleway;
+    font-family: raleway;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1, 2;
+    line-height: 1.2;
     color: var(--brand-color1);
 }
 
@@ -50,6 +55,11 @@ a {
 
 /* Nie wiem, czemu tak jest: kolor tekstu elementów w nawigacji zmienia się dopiero wtedy, gdy wrzucę je do osobnej klasy. Tak samo zrobiłem z kontaktami */
 
+.link1:hover,
+.link1:focus {
+    color: var(--brand-color7);
+}
+
 .address {
     font-size: 16px;
     line-height: 1.5;
@@ -59,13 +69,13 @@ a {
 .link2 {
     color: var(--brand-color5);
     font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .link2:hover,
 .link2:focus {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--brand-color8);
+        color: var(--brand-color7);
 }
 
 .first-section {
@@ -83,24 +93,18 @@ a {
 .order-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 5;
+    line-height: 1.5;
     color: var(--brand-color4);
     background-color: var(--brand-color3);
     box-shadow: 0px 4px 4px 0px #00000026;
     cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
 }
 
 .order-button:hover,
 .order-button:focus {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1, 5;
-    color: white;
-    background-color: var(--brand-color3);
-    border-color: var(--brand-color8);
-    /* nie widzę w Figmie, jaki konkretnie to jest kolor - button po najechaniu kursorem zmienia kolor ramki na różowy. Dałem jakiś przybliżony odcień. Ten sam kolor dałem w kilku innych miejscach. */
-    box-shadow: 0px 4px 4px 0px #00000026;
-    cursor: pointer;
+    background-color: var(--brand-color7);        
 }
 
 .head2 {
@@ -147,10 +151,10 @@ a {
 }
 
 .web-studio2 {
-    font: raleway;
+    font-family: raleway;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1, 2;
+    line-height: 1.2;
     color: var(--brand-color2);
 }
 
@@ -164,60 +168,28 @@ a {
     background-color: var(--brand-color1);
 }
 
-.all-button {
+.portfolio-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 5;
-    text-align: center;
-    color: var(--brand-color4);
-    background-color: var(--brand-color7);
-    box-shadow: 0px 2px 2px 0px #0000001F;
-    box-shadow: 0px 2px 1px 0px #00000014;
-    box-shadow: 0px 3px 1px 0px #0000001A;
-    cursor: pointer;
-}
-
-.button3 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1, 5;
+    line-height: 1.5;
     text-align: center;
     border-style: 1px;
     border-color: var(--brand-color6);
     color: var(--brand-color3);
     background-color: var(--brand-color6);
-    background-color: var(--brand-color2);
+    background-color: var(--brand-color2);    
     cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
 }
 
-.all-button:hover,
-.all-button:focus {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1, 5;
-    text-align: center;
+.portfolio-button:hover,
+.portfolio-button:focus {
     color: var(--brand-color4);
     background-color: var(--brand-color7);
-    border-color: var(--brand-color8);
     box-shadow: 0px 2px 2px 0px #0000001F;
     box-shadow: 0px 2px 1px 0px #00000014;
     box-shadow: 0px 3px 1px 0px #0000001A;
-    cursor: pointer;
-}
-
-.button3:hover,
-.button3:focus {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1, 5;
-    text-align: center;
-    border-style: 1px;
-    border-color: var(--brand-color6);
-    color: var(--brand-color3);
-    background-color: var(--brand-color6);
-    background-color: var(--brand-color2);
-    border-color: var(--brand-color8);
-    cursor: pointer;
 }
 
 .portfolio-list>img {
